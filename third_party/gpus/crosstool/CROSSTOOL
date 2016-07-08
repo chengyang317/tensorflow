@@ -63,7 +63,7 @@ toolchain {
 
   # cxx_builtin_include_directory: "/usr/lib/gcc/"
   # cxx_builtin_include_directory: "/usr/local/include"
-  # cxx_builtin_include_directory: "/usr/include"
+  cxx_builtin_include_directory: "/usr/include"
   cxx_builtin_include_directory: "/usr/local/apps/cuda/cuda-7.5.18/include"
   tool_path { name: "gcov" path: "/scratch/yang/install/gcc-5.4.0/bin/gcov" }
 
