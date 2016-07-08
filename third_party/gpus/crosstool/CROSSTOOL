@@ -62,7 +62,7 @@ toolchain {
   cxx_builtin_include_directory: "/usr/include"
   cxx_builtin_include_directory: "/usr/local/apps/cuda/cuda-7.5.18/include"
   cxx_builtin_include_directory: "/lib/gcc/x86_64-redhat-linux/4.8.5/include"
-  cxx_builtin_include_directory: "/usr/include/c++/4.8.5/"
+  cxx_builtin_include_directory: "/usr/include/c++/4.8.5"
   tool_path { name: "gcov" path: "/usr/bin/gcov" }
 
   # C(++) compiles invoke the compiler (as that is the one knowing where
