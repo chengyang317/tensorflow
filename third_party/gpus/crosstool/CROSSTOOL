@@ -59,6 +59,7 @@ toolchain {
   # to be fixed, maybe with auto-detection?
   cxx_builtin_include_directory: "/scratch/yang/install/gcc-5.4.0/include"
   cxx_builtin_include_directory: "/scratch/yang/install/gcc-5.4.0/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/include"
+  cxx_builtin_include_directory: "/scratch/yang/install/gcc-5.4.0/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/include-fixed"
 
   # cxx_builtin_include_directory: "/usr/lib/gcc/"
   # cxx_builtin_include_directory: "/usr/local/include"
