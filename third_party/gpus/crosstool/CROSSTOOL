@@ -46,7 +46,7 @@ toolchain {
   # files in third_party/gpus/crosstool/clang/bin, and this relative
   # path, combined with the rest of our Bazel configuration causes our
   # compilation to use those files.
-  tool_path { name: "gcc" path: "clang/bin/crosstool_wrapper_driver_is_not_gcc" }
+  tool_path { name: "gcc" path: "/scratch/yang/install/gcc-5.4.0/bin/gcc" }
   # Use "-std=c++11" for nvcc. For consistency, force both the host compiler
   # and the device compiler to use "-std=c++11".
   cxx_flag: "-std=c++11"
