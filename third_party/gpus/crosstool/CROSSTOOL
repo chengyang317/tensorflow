@@ -50,21 +50,20 @@ toolchain {
   # Use "-std=c++11" for nvcc. For consistency, force both the host compiler
   # and the device compiler to use "-std=c++11".
   cxx_flag: "-std=c++11"
-  linker_flag: "-lstdc++ -L/scratch/yang/install/gcc-5.4.0/lib -L/scratch/yang/install/gcc-5.4.0/lib64"
+  linker_flag: "-lstdc++"
   linker_flag: "-B/usr/bin/"
 
   # TODO(bazel-team): In theory, the path here ought to exactly match the path
   # used by gcc. That works because bazel currently doesn't track files at
   # absolute locations and has no remote execution, yet. However, this will need
   # to be fixed, maybe with auto-detection?
-  cxx_builtin_include_directory: "/scratch/yang/install/gcc-5.4.0/lib/gcc"
+  # cxx_builtin_include_directory: "/scratch/yang/install/gcc-5.4.0/lib/gcc"
   cxx_builtin_include_directory: "/usr/lib/gcc/"
   cxx_builtin_include_directory: "/usr/local/include"
   cxx_builtin_include_directory: "/usr/include"
-  cxx_builtin_include_directory: "/scratch/yang/install/gcc-5.4.0/include"
-  cxx_builtin_include_directory: "/scratch/yang/install/gcc-5.4.0/lib64/"
-  cxx_builtin_include_directory: "/scratch/yang/install/gcc-5.4.0/lib/"
-
+  # cxx_builtin_include_directory: "/scratch/yang/install/gcc-5.4.0/include"
+  # cxx_builtin_include_directory: "/scratch/yang/install/gcc-5.4.0/lib64/"
+  # cxx_builtin_include_directory: "/scratch/yang/install/gcc-5.4.0/lib/"
 
   tool_path { name: "gcov" path: "/usr/bin/gcov" }
 
