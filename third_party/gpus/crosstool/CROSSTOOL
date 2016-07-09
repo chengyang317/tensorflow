@@ -58,7 +58,7 @@ toolchain {
   # absolute locations and has no remote execution, yet. However, this will need
   # to be fixed, maybe with auto-detection?
   # cxx_builtin_include_directory: "/scratch/yang/install/gcc-5.4.0/lib/gcc"
-  cxx_builtin_include_directory: "/usr/lib/gcc/x86_64-redhat-linux/4.8.5/include"
+  cxx_builtin_include_directory: "/lib/gcc/x86_64-redhat-linux/4.8.5/include"
   cxx_builtin_include_directory: "/usr/local/include"
   cxx_builtin_include_directory: "/usr/include"
   cxx_builtin_include_directory: "/usr/include/c++/4.8.5"
