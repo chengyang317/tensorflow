@@ -39,7 +39,7 @@ toolchain {
   toolchain_identifier: "local_linux"
 
   tool_path { name: "ar" path: "/usr/bin/ar" }
-  tool_path { name: "compat-ld" path: "/usr/bin/ld" }
+  tool_path { name: "compat-ld" path: "/bin/ld" }
   tool_path { name: "cpp" path: "/scratch/yang/install/gcc-5.4.0/bin/cpp" }
   tool_path { name: "dwp" path: "/usr/bin/dwp" }
   # As part of the TensorFlow release, we place some cuda-related compilation
@@ -69,7 +69,7 @@ toolchain {
 
   # C(++) compiles invoke the compiler (as that is the one knowing where
   # to find libraries), but we provide LD so other rules can invoke the linker.
-  tool_path { name: "ld" path: "/usr/bin/ld" }
+  tool_path { name: "ld" path: "/bin/ld" }
 
   tool_path { name: "nm" path: "/usr/bin/nm" }
   tool_path { name: "objcopy" path: "/usr/bin/objcopy" }
