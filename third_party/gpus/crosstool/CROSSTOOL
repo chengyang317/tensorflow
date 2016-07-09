@@ -61,6 +61,9 @@ toolchain {
   cxx_builtin_include_directory: "/usr/lib/gcc/"
   cxx_builtin_include_directory: "/usr/local/include"
   cxx_builtin_include_directory: "/usr/include"
+  cxx_builtin_include_directory: "/usr/include/c++/4.8.5"
+
+
   # cxx_builtin_include_directory: "/scratch/yang/install/gcc-5.4.0/include"
   # cxx_builtin_include_directory: "/scratch/yang/install/gcc-5.4.0/lib64/"
   # cxx_builtin_include_directory: "/scratch/yang/install/gcc-5.4.0/lib/"
