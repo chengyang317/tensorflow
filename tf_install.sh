@@ -82,7 +82,7 @@ command -v swig >/dev/null 2>&1 || { echo "Swig not installed"; exit 1; }
 echo "*** Found SWIG"
 
 echo "*** Installing Tensorflow"
-git clone --recurse-submodules https://github.com/tensorflow/tensorflow
+#git clone --recurse-submodules https://github.com/tensorflow/tensorflow
 
 if [ -d /usr/local/cuda ]; then
   echo "*** Found CUDA. Make sure CuDNN is installed and provide the location
