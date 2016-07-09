@@ -84,7 +84,7 @@ echo "*** Found SWIG"
 echo "*** Installing Tensorflow"
 #git clone --recurse-submodules https://github.com/tensorflow/tensorflow
 
-if [ -d /usr/local/cuda ]; then
+if [ -d /usr/local/apps/cuda/cuda-7.5.18 ]; then
   echo "*** Found CUDA. Make sure CuDNN is installed and provide the location
   to the installer."
 else
