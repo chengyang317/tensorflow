@@ -1,7 +1,5 @@
 workspace(name = "org_tensorflow")
 
-load("@bazel_tools//tools/cpp:cc_configure.bzl", "cc_configure")
-cc_configure()
 
 # Uncomment and update the paths in these entries to build the Android demo.
 #android_sdk_repository(
@@ -432,3 +430,5 @@ new_git_repository(
   remote = "https://github.com/polymer/webcomponentsjs.git",
   tag = "v0.7.22",
 )
+
+
