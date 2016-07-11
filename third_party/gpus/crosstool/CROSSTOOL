@@ -61,6 +61,8 @@ toolchain {
   cxx_builtin_include_directory: "/usr/local/include"
   cxx_builtin_include_directory: "/usr/include"
   cxx_builtin_include_directory: "/usr"
+  cxx_builtin_include_directory: "/usr/include/c++/4.8.5"
+  cxx_builtin_include_directory: "/usr/include/c++"
   tool_path { name: "gcov" path: "/usr/bin/gcov" }
 
   # C(++) compiles invoke the compiler (as that is the one knowing where
