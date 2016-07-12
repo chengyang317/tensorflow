@@ -49,12 +49,11 @@ import pipes
 # Unofficial setting. DO NOT SUBMIT!!!
 CPU_COMPILER = ('/scratch/yang/install/gcc-4.9/bin/gcc')
 # Unofficial setting. DO NOT SUBMIT!!!
-# Unofficial setting. DO NOT SUBMIT!!!
 GCC_HOST_COMPILER_PATH = ('/scratch/yang/install/gcc-4.9/bin/gcc')
 
 CURRENT_DIR = os.path.dirname(sys.argv[0])
 NVCC_PATH = CURRENT_DIR + '/../../../cuda/bin/nvcc'
-LLVM_HOST_COMPILER_PATH = ('/usr/bin/gcc')
+LLVM_HOST_COMPILER_PATH = ('/scratch/yang/install/gcc-4.9/bin/gcc')
 PREFIX_DIR = os.path.dirname(GCC_HOST_COMPILER_PATH)
 
 def Log(s):
