@@ -1,7 +1,7 @@
 workspace(name = "org_tensorflow")
 
-load("//tensorflow:cc_configure.bzl", "cc_configure")
-cc_configure()
+#load("//tensorflow:cc_configure.bzl", "cc_configure")
+#cc_configure()
 
 # Uncomment and update the paths in these entries to build the Android demo.
 #android_sdk_repository(
