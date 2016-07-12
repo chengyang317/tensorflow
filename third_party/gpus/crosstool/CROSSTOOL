@@ -64,6 +64,7 @@ toolchain {
   cxx_builtin_include_directory: "/scratch/yang/install/gcc-4.9/local/include"
   cxx_builtin_include_directory: "/scratch/yang/install/gcc-4.9/include"
   cxx_builtin_include_directory: "/scratch/yang/install/gcc-4.9/lib/gcc/x86_64-unknown-linux-gnu/4.9.0/include/"
+  cxx_builtin_include_directory: "/usr/include"
 
 
   tool_path { name: "gcov" path: "/usr/bin/gcov" }
