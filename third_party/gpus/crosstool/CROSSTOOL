@@ -53,6 +53,9 @@ toolchain {
   linker_flag: "-lstdc++"
   linker_flag: "-B/usr/bin/"
 
+  linker_flag: "-Wl,-R/scratch/yang/install/gcc-4.9/lib64"
+
+
   # TODO(bazel-team): In theory, the path here ought to exactly match the path
   # used by gcc. That works because bazel currently doesn't track files at
   # absolute locations and has no remote execution, yet. However, this will need
