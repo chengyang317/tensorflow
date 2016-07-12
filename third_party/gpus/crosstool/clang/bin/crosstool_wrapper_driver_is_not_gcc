@@ -46,9 +46,11 @@ import pipes
 # "configure" uses the specific format to substitute the following string.
 # If you change it, make sure you modify "configure" as well.
 # Unofficial setting. DO NOT SUBMIT!!!
-CPU_COMPILER = ('/bin/gcc')
 # Unofficial setting. DO NOT SUBMIT!!!
-GCC_HOST_COMPILER_PATH = ('/bin/gcc')
+CPU_COMPILER = ('/scratch/yang/install/gcc-4.9/bin/gcc')
+# Unofficial setting. DO NOT SUBMIT!!!
+# Unofficial setting. DO NOT SUBMIT!!!
+GCC_HOST_COMPILER_PATH = ('/scratch/yang/install/gcc-4.9/bin/gcc')
 
 CURRENT_DIR = os.path.dirname(sys.argv[0])
 NVCC_PATH = CURRENT_DIR + '/../../../cuda/bin/nvcc'
