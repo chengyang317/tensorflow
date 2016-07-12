@@ -48,7 +48,9 @@ import pipes
 # "configure" uses the specific format to substitute the following string.
 # If you change it, make sure you modify "configure" as well.
 # Unofficial setting. DO NOT SUBMIT!!!
+# Unofficial setting. DO NOT SUBMIT!!!
 CPU_COMPILER = ('/bin/gcc')
+# Unofficial setting. DO NOT SUBMIT!!!
 # Unofficial setting. DO NOT SUBMIT!!!
 GCC_HOST_COMPILER_PATH = ('/bin/gcc')
 
