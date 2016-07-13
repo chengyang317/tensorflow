@@ -6,6 +6,12 @@ tf_custom_op_library(
 )
 
 tf_custom_op_library(
+    name = "sort_op.so",
+    srcs = ["sort_op.cc"],
+    gpu_srcs = ["sort_op_gpu.cu.cc", "sort_op_gpu.h"],
+)
+
+tf_custom_op_library(
     name = "non_maximum_surpress.so",
     srcs = ["non_maximum_surpress.cc"],
 )

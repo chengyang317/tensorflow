@@ -65,7 +65,7 @@ REGISTER_KERNEL(double);
 #undef REGISTER_KERNEL
 
 
-
+#if GOOGLE_CUDA
 
 template <typename T>
 bool BitonicSortLauncher(const T* input, int* output, const int input_size, const Eigen::GpuDevice& d);
@@ -113,6 +113,8 @@ REGISTER_KERNEL(float);
 REGISTER_KERNEL(double);
 
 #undef REGISTER_KERNEL
+
+#endif
 
 
 

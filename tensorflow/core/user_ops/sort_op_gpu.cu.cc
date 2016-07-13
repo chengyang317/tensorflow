@@ -1,7 +1,16 @@
+#if GOOGLE_CUDA
+
 #include "sort_op_gpu.h"
 #include <array>
 #include <stdio.h>
 
+
+
+#define EIGEN_USE_GPU
+
+namespace tensorflow {
+
+typedef Eigen::GpuDevice GPUDevice;
 
 template <typename T>
 __global__ void bitonic_sort_step(T *input, int *output, int j, int k)
@@ -36,7 +45,7 @@ __global__ void bitonic_sort_step(T *input, int *output, int j, int k)
 
 
 template <typename T>
-bool BitonicSortLauncher(const T* input, int* output, const int input_size, const Eigen::GpuDevice& d)
+bool BitonicSortLauncher(const T* input, int* output, const int input_size, const GpuDevice& d)
 {
     const int threads_per_block = 1024;
     int output_size = input_size;
@@ -59,7 +68,9 @@ bool BitonicSortLauncher(const T* input, int* output, const int input_size, cons
     return true;
 }
 
+}
 
+#endif
 
 
 
