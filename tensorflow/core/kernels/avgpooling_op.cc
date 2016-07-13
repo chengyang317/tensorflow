@@ -126,7 +126,7 @@ class AvgPoolingOp<GPUDevice, T> : public UnaryOp<T> {
                 errors::InvalidArgument("Sliding window stride field must "
                                         "specify 4 dimensions"));
     OP_REQUIRES_OK(context, context->GetAttr("padding", &padding_));
-    const int32 ksize_n = GetTensor#define EIGEN_USE_GPUDim(ksize_, data_format_, 'N');
+    const int32 ksize_n = GetTensorDim(ksize_, data_format_, 'N');
     const int32 stride_n = GetTensorDim(stride_, data_format_, 'N');
     OP_REQUIRES(context, ksize_n == 1 && stride_n == 1,
                 errors::Unimplemented(
@@ -141,7 +141,7 @@ class AvgPoolingOp<GPUDevice, T> : public UnaryOp<T> {
       return;
     }
     OP_REQUIRES(context, params.depth_window == 1,
-                errors::Unimplement#define EIGEN_USE_GPUed("Non-spatial pooling is not "
+                errors::Unimplemented("Non-spatial pooling is not "
                                       "yet supported. Volunteers? :)"));
 
     // For avgpooling, tensor_in should have 4 dimensions.
@@ -156,7 +156,7 @@ class AvgPoolingOp<GPUDevice, T> : public UnaryOp<T> {
           stride_, padding_, data_format_, tensor_in, output_shape);
     } else {
       Tensor* output = nullptr;
-      OP_REQUIRES_OK(context,#define EIGEN_USE_GPU
+      OP_REQUIRES_OK(context,
                      context->allocate_output(0, output_shape, &output));
       Eigen::PaddingType pt = BrainPadding2EigenPadding(padding_);
       functor::SpatialAvgPooling<Device, T>()(

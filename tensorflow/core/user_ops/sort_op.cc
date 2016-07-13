@@ -8,13 +8,17 @@
 #include "tensorflow/core/framework/op_kernel.h"
 
 
+
+namespace tensorflow {
+
+
 REGISTER_OP("Sort")
 .Attr("T: {float, double, int}")
 .Input("input: T")
 .Output("indices: int");
 
 
-using namespace tensorflow;
+
 
 typedef Eigen::ThreadPoolDevice CPUDevice;
 typedef Eigen::GpuDevice GPUDevice;
@@ -71,7 +75,7 @@ template <typename T>
 bool BitonicSortLauncher(const T* input, int* output, const int input_size, const Eigen::GpuDevice& d);
 
 
-template <typename T>
+template <typename T>namespace tensorflow {
 static void SortKernel(OpKernelContext* context, const Tensor* input, Tensor* output, const int input_size)
 {
     BitonicSortLauncher(
@@ -113,6 +117,8 @@ REGISTER_KERNEL(float);
 REGISTER_KERNEL(double);
 
 #undef REGISTER_KERNEL
+
+}
 
 #endif
 
